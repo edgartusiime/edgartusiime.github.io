@@ -1,1 +1,134 @@
-"hello World" 
+<!DOCTYPE html>
+<html>
+<header>
+    <meta charset = UTF-8>
+    <title>Maintenance Tracker website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="/static/css/nav.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/static/css/font-awesome.min.css">
+
+</header>
+<body>
+<div class="wrapper">
+    <div class="row" id="header">
+        <div class="col-12">
+            <img class="logo"  src="/static/img/flexy-logo.png"/>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+        <nav role="navigation" id="nav">
+            <input class="trigger" type="checkbox" id="mainNavButton">
+            <label for="mainNavButton" onclick="Menu" ></label>
+
+            <ul>
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="{{ url_for('about') }}">About Us</a></li>
+                <li><a href="{{ url_for('products') }}">Products</a></li>
+                <li><a href="{{ url_for('blog') }}">Blog</a></li>
+                <li><a href="{{ url_for('specials') }}">Specials</a></li>
+                <li><a href="{{ url_for('contact') }}">Contact Us</a></li>
+            </ul>
+        </nav>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12">
+            <img src="/static/img/kite.png">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12" style="padding: 2%;">
+            <h2 class="dark">Welcome To Flexy!</h2>
+        </div>
+    </div>
+
+    <div class="row" style="background-color: #3B8AB5; padding: 0;">
+        <div class="col-12">
+            <img src="/static/img/paper.png">
+        </div>
+    </div>
+
+    <div class="row" style="background-color: #f6931E;">
+        <div class="col-11">
+            <h2>Get Ready For Takeoff</h2>
+        </div>
+        <div class="col-3">
+            <img class="circle" src="/static/img/take-off.png">
+        </div>
+    </div>
+
+    <div class="row" style="background-color: #1ABC9C;">
+        <div class="col-10">
+            <h2>We're Flying Around The Globe</h2>
+        </div>
+        <div class="col-3">
+            <img class="circle" src="/static/img/orange-globe.png">
+        </div>
+    </div>
+
+    <div class="row" style="background-color: #E5EF3F;">
+        <div class="col-9">
+            <h2>Above The Clouds & Over The Sea</h2>
+        </div>
+        <div class="col-3">
+            <img class="circle" src="/static/img/waves.png">
+        </div>
+    </div>
+
+    <div class="row" style="background-color: #34495E;">
+        <div class="col-8">
+            <h2>In Just 42 Hours and 27 Minutes</h2>
+        </div>
+        <div class="col-3">
+            <img class="circle" src="/static/img/plane.png">
+        </div>
+    </div>
+
+    <div class="row" style="background-color: #00AFE1;">
+        <div class="col-7">
+            <h2>So Come Along For The Ride</h2>
+        </div>
+        <div class="col-3">
+            <img class="circle" src="/static/img/paper-blue.png">
+        </div>
+    </div>
+
+    <div class="row" style="background-color:#66D4FF">
+        <div class="col-12">
+            <img src="/static/img/plane-background.png">
+        </div>
+    </div>
+    <div class="row" style="background-color:#66D4FF">
+        <div class="col-12">
+            <h2>Follow Us</h2>
+        </div>
+    </div>
+
+    <div class="row" style="background-color:#66D4FF">
+        <div class="col-12">
+            <ul class="Social">
+                <li><a href ="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href ="#"><i class="fa fa-google-plus"></i></a></li>
+                <li><a href ="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href ="#"><i class="fa fa-youtube"></i></a></li>
+                <li><a href ="#"><i class="fa fa-instagram"></i></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="row" style="background-color: #34495E; border-top: 2px solid #F6931E">
+        <div class="col-12">
+            <p>&copy; Flexy.</p>
+
+        </div>
+    </div>
+
+
+</div>  <!------end wrapper----->
+</body>
+
+</html>
